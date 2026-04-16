@@ -23,5 +23,3 @@ jobs:
       - name: Deploy (demo solis)
         if: success()
         run: echo "Deploy veiksmīgs"
-
-
