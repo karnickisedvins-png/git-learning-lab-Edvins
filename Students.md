@@ -1,3 +1,3 @@
-# Studentu saraksts
+# Students
 Edvīns Karņickis
 ## Edvīns Karņickis  
