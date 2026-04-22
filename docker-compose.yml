@@ -1,0 +1,26 @@
+services:
+frontend:
+image: nginx
+ports:
+- "3000:80"
+
+backend:
+image: node:18
+working_dir: /app
+volumes:
+- ./backend:/app
+command: ["node", "server.js"]
+ports:
+- "5000:5000"
+
+db:
+image: postgres:15
+environment:
+POSTGRES_USER: user
+POSTGRES_PASSWORD: password
+POSTGRES_DB: appdb
+volumes:
+- db_data:/var/lib/postgresql/data
+
+volumes:
+db_data:
